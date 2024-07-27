@@ -38,6 +38,66 @@
                         <a class="nav-link" href="#">Help</a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container mt-4">
+            <h2>Nuovo Libro</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="nomeAutore" class="form-label">Nome Autore</label>
+                        <input type="text" class="form-control" id="nomeAutore"
+                            placeholder="Inserisci il nome dell'autore">
+                    </div>
+                    <div class="col">
+                        <label for="cognomeAutore" class="form-label">Cognome Autore</label>
+                        <input type="text" class="form-control" id="cognomeAutore"
+                            placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="titolo" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="titolo" placeholder="Inserisci il titolo del libro">
+                    <span>Titolo versione italiana</span>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="genere" class="form-label">Genere</label>
+                        <select id="genere" class="form-select">
+                            <option selected>Scegli il genere</option>
+                            <!-- Add options as needed -->
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="annoPubblicazione" class="form-label">Anno di Pubblicazione</label>
+                        <input type="text" class="form-control" id="annoPubblicazione" placeholder="Inserisci l'anno">
+                    </div>
+                    <div class="col">
+                        <label for="isbn" class="form-label">ISBN#</label>
+                        <input type="text" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                </div>
+                <hr class="line">
+                <div class="mb-3">
+                    <label for="note" class="form-label">Note</label>
+                    <textarea class="form-control" id="note" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="disponibileDigitale">
+                    <label class="form-check-label" for="disponibileDigitale">Disponibile anche in digitale</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
